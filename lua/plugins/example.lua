@@ -182,6 +182,20 @@ return {
   -- add jsonls and schemastore packages, and setup treesitter for json, json5 and jsonc
   { import = "lazyvim.plugins.extras.lang.json" },
 
+  {
+    "folke/snacks.nvim",
+    opts = {
+      picker = {
+        sources = {
+          files = {
+            hidden = true, -- show dotfiles by default
+            ignored = true, -- show gitignored by default (or set false if you want)
+          },
+        },
+      },
+    },
+  },
+
   -- add any tools you want to have installed below
   {
     "williamboman/mason.nvim",
