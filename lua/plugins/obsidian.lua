@@ -5,6 +5,11 @@ if vim.env.OBSIDIAN_HOLOCRON_PATH then
   table.insert(workspaces, { name = "Holocron", path = vim.env.OBSIDIAN_HOLOCRON_PATH })
 end
 
+if vim.env.OBSIDIAN_TRALFAMADORE_PATH then
+  -- add your own workspaces like this
+  table.insert(workspaces, { name = "Tralfamadore", path = vim.env.OBSIDIAN_HOLOCRON_PATH })
+end
+
 return {
   "obsidian-nvim/obsidian.nvim",
   version = "*", -- use latest release, remove to use latest commit
