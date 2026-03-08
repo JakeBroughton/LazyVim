@@ -7,7 +7,7 @@ end
 
 if vim.env.OBSIDIAN_TRALFAMADORE_PATH then
   -- add your own workspaces like this
-  table.insert(workspaces, { name = "Tralfamadore", path = vim.env.OBSIDIAN_HOLOCRON_PATH })
+  table.insert(workspaces, { name = "Tralfamadore", path = vim.env.OBSIDIAN_TRALFAMADORE_PATH })
 end
 
 return {
