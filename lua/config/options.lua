@@ -12,3 +12,5 @@ if vim.fn.filereadable(env_file) == 1 then
     end
   end
 end
+
+vim.opt.scrolloff = 999
